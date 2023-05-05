@@ -256,8 +256,17 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
 ```
 
+Vous devez ouvrir un nouveau terminal et un wizard va vous aider à configurer le thème.
+
+Vous pouvez relancer la configuration avec la commande :  
+
+```bash
+p10k configure
+```
+
 ## Pour vérification
 Remettre une capture d’écran de votre Linux avec un shell d’ouvert ayant les commandes suivantes exécutées à l'intérieur :
+
 ```bash
 git version
 docker --version
@@ -288,3 +297,4 @@ Note : les compétences sont développées en partie.
 - LVM : https://access.redhat.com/documentation/fr-fr/red_hat_enterprise_linux/6/html/logical_volume_manager_administration/index
 
 - zsh : https://kifarunix.com/install-and-setup-zsh-and-oh-my-zsh-on-ubuntu-20-04/
+- Powerlevel10k : https://github.com/romkatv/powerlevel10k
