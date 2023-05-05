@@ -108,3 +108,6 @@ $docker compose stop           # arrêter vos services
 $docker compose down           # tout démonter, en supprimant entièrement les conteneurs
 $docker compose down --volumes # supprimer également les données.
 ```
+
+Jean-Pierre Duchesneau
+Claude Roy

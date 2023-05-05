@@ -108,3 +108,6 @@ Ceci est un aide mémoire et non un cours ni une liste exhaustive de commandes �
 | nslookup | Interroge le serveur DNS |
 | sudo nft | Affiche / configure les règles du coupe-feu |
 | traceroute | Affiche les noeuds traversés vers une destination |
+
+Jean-Pierre Duchesneau
+Claude Roy
