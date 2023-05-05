@@ -113,5 +113,5 @@ Ceci est un aide m√©moire et non un cours ni une liste exhaustive de commandes √
 
 Voir le fichier [cmdDocker.md](cmdDocker.md)
 
-Jean-Pierre Duchesneau
+Jean-Pierre Duchesneau  
 Claude Roy

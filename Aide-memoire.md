@@ -109,5 +109,5 @@ Ceci est un aide mémoire et non un cours ni une liste exhaustive de commandes �
 | sudo nft | Affiche / configure les règles du coupe-feu |
 | traceroute | Affiche les noeuds traversés vers une destination |
 
-Jean-Pierre Duchesneau
+Jean-Pierre Duchesneau  
 Claude Roy

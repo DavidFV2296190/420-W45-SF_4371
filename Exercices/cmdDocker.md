@@ -109,5 +109,5 @@ $docker compose down           # tout démonter, en supprimant entièrement les 
 $docker compose down --volumes # supprimer également les données.
 ```
 
-Jean-Pierre Duchesneau
+Jean-Pierre Duchesneau  
 Claude Roy
