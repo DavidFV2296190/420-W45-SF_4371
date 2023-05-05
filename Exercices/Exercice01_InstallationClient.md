@@ -94,7 +94,7 @@ ls -al .ssh
 cat .ssh/id_rsa.pub
 ```
 
-L’autre fichier, id\_ed25519.pub est la clé publique, elle doit être envoyée sur votre serveur distant. Par exemple, dans votre profil GitHub dans Setting -> SSH and GPG Keys -> New SSH Key. Dans ce cas vous faite une copie du contenu id\_ed25519.pub et vous le coller dans l'espace dans le champ prévu à cet effet  (key) et donnez un nom significatif à votre clé dans Tile:
+L’autre fichier, id\_ed25519.pub est la clé publique, elle doit être envoyée sur votre serveur distant. Par exemple, dans votre profil GitHub dans Setting -> SSH and GPG Keys -> New SSH Key. Dans ce cas vous faite une copie du contenu id\_ed25519.pub et vous le coller dans l'espace dans le champ prévu à cet effet  (key) et donnez un nom significatif à votre clé dans Title:
 
 ![Git Hub SSH](images/GitHubSSH.jpg)
 
@@ -196,8 +196,8 @@ Avec ces commandes, vous avez installé Docker, vous avez ajouté votre utilisat
 Vous devez relancer votre session pour que votre utilisateur soit inclus dans le groupe docker.
 
 b.	Plusieurs des exercices se feront sous Docker. Vous pouvez également installer Docker sous votre Windows ou Mac.
-Docker sous Windows : https://docs.docker.com/desktop/install/windows-install/.
 
+Docker sous Windows : https://docs.docker.com/desktop/install/windows-install/.  
 Docker sous MAC : https://docs.docker.com/desktop/install/mac-install/.
 
 
