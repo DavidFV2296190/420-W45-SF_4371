@@ -21,7 +21,7 @@ a - En utilisant l’ISO ubuntu-22.04-desktop-amd64.iso, créez une machine virt
 
     Dossier dans vSphere : DFC DS/VM DFC/E23_4371_420W45_ISS_CR/
     Nom de la VM : E23_4371_420W45_Ub_Cli_Initiale_#Matricule
-    Storage (disue vSphere) : ESXDFC2
+    Storage (disque vSphere) : ESXDFC2
     CPU : 2
     Mémoires : 4 Go
     Disque dur : 2 disques, 20 Go chacun en **partitionnement dynamique (Thin provision)**   
@@ -293,8 +293,6 @@ Note : les compétences sont développées en partie.
 
 ## Références
 - Ubuntu : https://ubuntu.com/download/desktop
-
 - LVM : https://access.redhat.com/documentation/fr-fr/red_hat_enterprise_linux/6/html/logical_volume_manager_administration/index
-
 - zsh : https://kifarunix.com/install-and-setup-zsh-and-oh-my-zsh-on-ubuntu-20-04/
 - Powerlevel10k : https://github.com/romkatv/powerlevel10k
