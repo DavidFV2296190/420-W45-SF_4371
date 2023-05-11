@@ -7,7 +7,7 @@
 - Système d'exploitation : Linux Ubuntu client et serveur 22.04
 - Environnement : virtuel, vsphere.
 
-### Objectifs :
+### Objectifs
 
 Cet exercice a pour objectifs :  
 
