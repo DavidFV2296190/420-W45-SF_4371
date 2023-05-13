@@ -12,7 +12,7 @@
 - Effectuer des tâches de gestion du système d’exploitation.
 - Création correcte des comptes et des groupes d’utilisateurs.
 - Attribution correcte des droits d’accès.
-- Gestion appropriée desprocessus, de la mémoire et de l’espace disque.
+- Gestion appropriée des processus, de la mémoire et de l’espace disque.
 - Localiser l'emplacement et la taille du noyau (kernel) Linux.
 - Localiser les modules associés au noyau de Linux.
 - Vérifier les modules chargés en mémoire.
@@ -39,7 +39,7 @@ Vous devez remettre un document Word contenant les vérifications demandées.
 cat /etc/group | grep users
 ```
 
-- Créez les usagers du tableau suivant.
+- Créez les usagers du tableau ci-dessous.
 - Pour les login respectez la nomenclature première lettre du prénom et le nom. 
 - ATTENTION : Tous ces utilisateurs doivent être membre du groupe  **users** vérifier avec le man <code>adduser</code> pour savoir comment y parvenir.
 - Vérifier la présence du shell avant de l'ajouter à la commande.
@@ -79,19 +79,22 @@ $sudo adduser ebedard
 
 - Modifiez les attributs de ces répertoires de la manière suivante :
 
-1- DSTI :  
+1- DSTI : 
+
    - Propriétaire : root  
    - Accessible en lecture, écriture et exécution pour le propriétaire  
    - Accessible en lecture, écriture et exécution pour le groupe admin  
    - Pas accessible pour les autres  
 
 2- RH :  
+
    - Propriétaire : root  
    - Accessible en lecture, écriture et exécution pour le propriétaire  
    - Accessible en lecture, écriture  pour le groupe rh  
    - Pas accessible pour les autres  
 
 3- Users :  
+
    - Propriétaire : root  
    - Groupe : users  
    - Accessible en lecture, écriture et exécution pour le propriétaire  
@@ -103,7 +106,7 @@ $sudo adduser ebedard
 
 - Pour tous les usagers, sauf root, créer un lien symbolique dans son répertoire personnel vers /var/data.
 - La commande doit être faite à partir de votre usager principal sans avoir à vous déplacer dans l'arborescence.
-- Connecter-vous avec l'un des usagers pour vérifier le fonctionnement du lien symbolique.
+- Connectez-vous avec l'un des usagers pour vérifier le fonctionnement du lien symbolique.
 
 ## Pour vérification
 Remettre, dans le document Word de remise, une capture d’écran des commandes suivantes:
@@ -119,7 +122,7 @@ ls -l /var/data
 ### Environnement Linux
 
 - Connectez-vous à votre serveur depuis votre station de travail.
-- Indiquez la version de votre noyau :
+- Affichez la version de votre noyau :
 
 ```bash
 cat /proc/version 
@@ -154,7 +157,7 @@ cat /proc/modules | less
 lsmod |less
 ```
 
-- Faite <code>man lsmod</code>, y a t'il un manuel pour cette commande ? Non
+- Faire <code>man lsmod</code>, y a t'il un manuel pour cette commande ? Non
 - Cherchez sur le Web pour trouver des informations.
 - On vous proposera aussi de lire sur <code>modprobe</code> et <code>modinfo</code>.
 - Essayer la commande suivante: 
@@ -276,7 +279,7 @@ cat /etc/passwd |grep syslog
 
 </details>
 
-**Question** est-ce que cet usager à accès au Shell ?
+**Question** est-ce que cet usager a accès au Shell ?
 
 <details>
 
@@ -310,7 +313,7 @@ pidof firefox
 # Vous devriez avoir plusieur processus.pki
 kill $(pidof firefox)
 
-# Firefox c'est fermé
+# Firefox s'est fermé
 ```
 
 ### La recherche de fichiers
@@ -457,10 +460,10 @@ ping -c 3 {domaine de votre choix}
 Vous avez une connectivité avec Internet.
 
 ## Pour vérification
-Remettre, dans le document Word de remise, une capture d’écran des commandes suivantes:
+Remettre, dans le document Word de remise, une capture d’écran de la commande suivante :
 
 ```bash
-???
+ping -c 3 google.ca
 ```
 
 
