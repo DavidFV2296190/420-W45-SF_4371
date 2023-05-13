@@ -77,8 +77,9 @@ $ssh username@ip_serveur [-p port]
 
 ```bash
 $uname
+$hostnamectl
 $ip a
-$ss -tunap
+$ss -tunap # Vous devriez voir votre connexion SSH.
 $df
 $pwd
 ```
@@ -111,14 +112,14 @@ Source : [https://www.lecoindunet.com/difference-apt-update-upgrade-full-upgrade
 
 ```bash
 $sudo apt update
-$sudo apt upgrade
+$sudo apt upgrade -y
 ```
 
 - Entrez les commandes suivantes sur poste client : 
 
 ```bash
 $sudo apt update
-$sudo apt full-upgrade
+$sudo apt full-upgrade -y
 ```
 
 ### Vérifier les logs du serveur
@@ -162,10 +163,10 @@ $ls -l /var/log/auth.log
 ```bash
 $ls -l /etc/passwd
 $ls -l /etc/shadow
-$ls -l /home/{votre usager}
+$ls -l /home # Regarder votre utilisateur.
 ```
 
-Vous pouvez visualiser mes résultats [ici](images/droit.png).
+Vous pouvez visualiser un exemple de résultats [ici](images/droit.png).
 
 **Question** : Selon-vous, pourquoi seule root et le groupe shadow ont le droit lecture sur <code>/etc/shadow</code> et que tout le monde peut lire <code>/etc/passwd</code> ?
 
@@ -267,6 +268,8 @@ Vous pouvez toujours vous référer à la page de manuel de <code>ssh_config</co
 
 >**[!Attention]** les commandes suivantes doivent être exécutées avec l'élévation des privilèges, donc entant que SUDO.
 
+Établir une connexion ssh à votre serveur test.  
+
 Les fichiers de configuration de SSH sont situés dans <code>/etc/ssh/</code>. Comme tout fichier de configuration qu'on modifie, il est nécessaire de les sauvegarder avant de les modifier. 
 
 - Utilisez la technique suivante sur tous les fichiers de configuration que vous modifiez. Si j'aimais, il y a un problème, il est facile de revenir en arrière.
@@ -279,6 +282,13 @@ sudo cp /etc/ssh/sshd_config.orig /etc/ssh/sshd_config
 
 ![Dossier ssh](images/DossierSSH.png)
 
+Ouvrez le fichier de configuration du serveur sshd.
+
+```bash
+sudo nano /etc/ssh/sshd_config
+# ou
+sudo vim /etc/ssh/sshd_config
+```
 
 ### 10 Techniques pour sécuriser votre serveur SSH :
 
@@ -286,7 +296,7 @@ sudo cp /etc/ssh/sshd_config.orig /etc/ssh/sshd_config
 
 Oui, il est possible d'avoir des comptes utilisateurs sous Linux sans aucun mot de passe. Si ces utilisateurs essaient d'utiliser SSH, ils n'auront pas besoin de mots de passe pour accéder au serveur via SSH également.
 
-C'est un risque pour la sécurité. Vous devriez interdire l'utilisation de mots de passe vides. Dans le fichier <code>/etc/ssh/sshd_config</code>, veillez vérifier que l'option <code>PermitEmptyPasswords</code> sur <code>no</code> (normalement, c'est l'option par défaut).
+C'est un risque pour la sécurité. Vous devriez interdire l'utilisation de mots de passe vides. Dans le fichier <code>/etc/ssh/sshd_config</code>, veillez vérifier que l'option <code>PermitEmptyPasswords</code> sur <code>no</code> (normalement, c'est l'option par défaut, donc commenté).
 
 <code>PermitEmptyPasswords no</code>
 
@@ -329,7 +339,7 @@ Vous pouvez également contrôler le nombre de fois qu'il envoie le message de v
 
 <code>ClientAliveCountMax 2</code>
 
-**5- Autoriser l'accès SSH à des utilisateurs sélectionnés uniquement***
+**5- Autoriser l'accès SSH à des utilisateurs sélectionnés uniquement**
 
 En matière de sécurité, vous devez suivre le principe du moindre privilège. Ne donnez pas de droits lorsque ce n'est pas nécessaire.
 Vous avez probablement plusieurs utilisateurs sur votre système Linux. Devez-vous autoriser l'accès SSH à chacun d'entre eux ? Peut-être pas.  
@@ -378,12 +388,12 @@ Avant de le faire, vous devez garder à l'esprit les points suivants :
 
 **Copier votre clé SSH sur votre serveur de test**
 
-- Créer le dossier <code>.ssh</code> dans votre usager sur le serveur et créer le fichier <code>authorized_keys</code> dans le dossier
+- S'il n'existe pas, créer le dossier <code>.ssh</code> dans votre usager sur le serveur et créer le fichier <code>authorized_keys</code> dans le dossier
 
 - Par la suite, sur votre client à l'aide de la commande <code>ssh-copy-id</code> (non disponible sous Windows) ou la commande <code>scp</code> copiez votre clé SSH sur votre serveur.
 
 ```bash
-ssh-copy-id {votreusager}@{adresse IP du serveur}
+ssh-copy-id -i .ssh/id_ed25519 {votreusager}@{adresse IP du serveur}
 # Entrer le mot de passe de l'usager.
 ```
 
@@ -425,17 +435,21 @@ Si vous utilisez une ancienne distribution Linux. Certaines versions plus ancien
 
 Les versions plus récentes de SSH ont automatiquement activé le protocole 2, mais il n'y a pas de mal à le vérifier.
 
+---
+
 Ceci n'est pas une liste exhaustive de sécurisation de votre connexion ssh (il existe la gestion centralisée, les filtres...), mais c'est un bon début.
 
 ## Pour vérification
 
-- Inclure dans votre fichier Word de remise, une capture d'une connexion ssh à partir du fichier de configuration qui permet de vous connecter à votre serveur disant sous le nom de website.
+- Inclure dans votre fichier Word de remise, une capture d'une connexion ssh à partir du fichier de configuration qui permet de vous connecter à votre serveur distant sous le nom de website.
 
 ```bash
 ssh website
 ``` 
 
 Je dois pouvoir voir la commande et le résultat de connexion sur votre serveur.
+
+![Exemple de connexion ssh](images/connexionSSH.png)
 
 ### Lecture complémentaire :
 
