@@ -451,6 +451,7 @@ Je dois pouvoir voir la commande et le résultat de connexion sur votre serveur.
 
 ![Exemple de connexion ssh](images/connexionSSH.png)
 
-### Lecture complémentaire :
+### Références
 
 Plusieurs parties de cet exercice proviennent du site Web https://linuxhandbook.com/
+https://www.ssh.com/academy/ssh/session-key
