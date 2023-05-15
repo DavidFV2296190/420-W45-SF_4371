@@ -91,7 +91,7 @@ Il y a deux clés qui ont été créées ici ( PRIVEE et PUBLIQUE ): id\_ed25519
 
 ```bash
 ls -al .ssh
-cat .ssh/id_red25519.pub
+cat .ssh/id_ed25519.pub
 ```
 
 L’autre fichier, id\_ed25519.pub est la clé publique, elle doit être envoyée sur votre serveur distant. Par exemple, dans votre profil GitHub dans Setting -> SSH and GPG Keys -> New SSH Key. Dans ce cas vous faite une copie du contenu id\_ed25519.pub et vous le coller dans l'espace dans le champ prévu à cet effet  (key) et donnez un nom significatif à votre clé dans Title:
