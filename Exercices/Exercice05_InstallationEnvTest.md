@@ -192,7 +192,7 @@ sudo service mysql status
 [Cliquez pour voir  mon résultat](images/espace2.png)
 - Remarquez seule les partitions /root et /var ont changés.
 
-- Comme pour votre poste client, vérifier les connexions possibles au serveur MySQL : 
+- Vérifier les connexions possibles au serveur MySQL (vérifie si nous avons un port d'écoute) : 
 
 ```bash
 sudo ss -unap |grep 3306
@@ -200,8 +200,8 @@ sudo ss -unap |grep 3306
 Résultat attendu : 
 
 ```bash
-tcp     0    0    127.0.0.1:33060     0.0.0.0:*     LISTEN
-tcp     0    0    127.0.0.1:3306      0.0.0.0:*     LISTEN
+LISTEN 0    151    127.0.0.1:3306	    0.0.0.0:*    users:(("mysqld,pid2791,fd=23))
+LISTEN 0    70     127.0.0.1:3306       0.0.0.0:*    users:(("mysqld,pid2791,fd=21))
 ```
 
 ### Tester l’installation de MySQL
@@ -266,10 +266,10 @@ sudo nano /etc/nginx/sites-available/default
 
 ```bash
 server {
-        listen 80;
+        listen 80 default_server;
         server_name localhost;
         root /var/www/html;
-        index index.php;
+        index index.php index.html index.htm index.nginx-debian.html;
 
 
 
