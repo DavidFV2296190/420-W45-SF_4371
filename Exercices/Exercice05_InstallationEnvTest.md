@@ -8,7 +8,7 @@
 - Environnement : virtuel, vsphere.
 
 
-Dans cet exercice nous allons mettre en place un environnement de tests. Pour rappel, c'est l’environnement de simulation. Généralement, l’environnement
+Dans cet exercice, nous allons mettre en place un environnement de tests. Pour rappel, c'est l’environnement de simulation. Généralement, l’environnement
 de simulation est identique à celui de production, si bien que le matériel
 et les logiciels ne présentent pas de grandes différences lors de
 l’utilisation de l’application.
