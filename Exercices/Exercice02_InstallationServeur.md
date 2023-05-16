@@ -38,7 +38,7 @@ De plus, vous devez mettre dans votre document une capture d’écran de votre s
 # Les informations à l'ouverture de la session 
 git version
 docker --version
-docker compose --version
+docker compose version
 ```
 
 ##### Pour la section de la gestion des disques LVM 
