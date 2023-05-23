@@ -403,7 +403,7 @@ ssh-copy-id -i .ssh/id_ed25519 {votreusager}@{adresse IP du serveur}
     - Trouvez la ligne <code>PasswordAuthentication yes</code>
     - Changer la pour <code>PasswordAuthentication no</code>
     - S'il y a un # (signifie commenté) au début de cette ligne, supprimez-le.
-    - Vérifier que <code>PubKeyAuthentification yes</code> n'a pas été changé.
+    - Vérifier que <code>PubkeyAuthentication yes</code> n'a pas été changé.
     - Si vous voulez utiliser un autre fichier que <code>.ssh/auhtorized_keys</code>, décomenter la ligne <code>AuthorizedKeysFile</code> et indiqué le nom de votre fichier.
  - Sauvegardez le fichier après avoir effectué ces modifications et redémarrez le service SSH.
 
