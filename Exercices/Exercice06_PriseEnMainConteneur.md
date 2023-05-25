@@ -125,7 +125,7 @@ Pour vérifier les conteneurs qui s’exécutent, exécuter la commande :
 docker container ls
 ```
 
-![docker container ls](images/container_ls.png)
+![docker container ls](images/container_list.png)
 
 Chaque conteneur a un ID et un nom (NAMES). Si l’on ne spécifie pas de nom, un nom au hasard est utilisé. L’ID et le nom doivent être uniques pour tous nos conteneurs.  
 
