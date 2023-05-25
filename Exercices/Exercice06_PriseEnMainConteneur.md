@@ -225,7 +225,7 @@ docker container rm ID1 ID2 ID3
 Avez-vous réussi à effacer tous les conteneurs ?
 <details>
   <summary markdown="span">Réponse.</summary>
-	Non,
+	Non.
 </details>
 
 Normalement, un conteneur doit être arrêté pour pouvoir l’effacer.
