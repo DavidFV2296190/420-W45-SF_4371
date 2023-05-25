@@ -272,7 +272,6 @@ Utiliser le paramètre <code>--help</code> pour vous aider dans les commandes Do
 <details>
   <summary markdown="span">Réponse.</summary>
 
-  ```bash
 	docker container run -p 80:80 --name serveurweb -d nginx
 	docker container run -p 8080:80 --name apache -d httpd
 	docker container run -d --name mysql -e MYSQL_RANDOM_ROOT_PASSWORD=yes -p 3306:3306 mysql
@@ -286,7 +285,7 @@ Utiliser le paramètre <code>--help</code> pour vous aider dans les commandes Do
 	docker container rm ...
 	docker container ls -a
 	docker image ls  
-	```  
+	
 	
 </details>
 
