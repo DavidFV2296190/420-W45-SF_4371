@@ -25,7 +25,7 @@
 	```bash
 	sudo apt update && sudo apt install g++ -y
 	```
-	
+	Si vous avez des problème avec l'installation de g ++ : <https://stackoverflow.com/questions/66869441/unable-to-install-g-and-build-essentials-in-ubuntu-20-04>.
 	</details>
 	
 - Créez le fichier "premier-programme.cpp" avec le contenu suivant :
@@ -49,14 +49,14 @@ int main(int argc, char** argv) {
   ```
 
 - À partir du fichier et de la documentation, décrivez ce que fait le fichier Dockerfile
-- Tapez la commande ```docker build --tag premier-programme:latest .```
+- Tapez la commande <code>docker build --tag premier-programme:latest .</code>
 - Vérifiez que l'image a bien été créée
 - Lancez un conteneur qui utilise votre image
 
 ```bash
 docker container run --rm premier-programme
 ```
-- Modifiez le programme précédent pour qu'il corresponde au listage suivant :
+- Modifiez le programme précédent pour qu'il corresponde au listage suivant (n'oubliez pas de compiler de nouveau) :
 
 ```cpp
 #include <iostream>
@@ -80,8 +80,11 @@ int main(int argc, char** argv) {
     </details>  
     
 - Reconstruisez votre image de conteneur
-- Essayez de lancer un nouveau conteneur en utilisant les mêmes lignes de commandes que précédemment
+- Essayez de lancer un nouveau conteneur en utilisant les mêmes lignes de commandes que précédemment.
 - Essayez de lancer un nouveau conteneur en utilisant en ajoutant à la fin la chaîne de caractères <code>"Un paramètre qui vient de l'extérieur du conteneur"</code>.
+
+## Pour vérification
+Remettre une capture d’écran de la dernière création et du dernier test de l'image.
 
 
 ## Section 2 - Créer une image à partir d'une autre image
@@ -149,9 +152,6 @@ docker system df
 N'oubliez pas que chacune de ces commandes a des options que vous découvrez avec <code>--help</code>.  
 Par contre, ayant un compte Docker gratuit vous êtes limité au nombre de téléchargement d’images que vous pouvez faire en 6 heures : <https://docs.docker.com/docker-hub/download-rate-limit/>. Vous devez donc bien balancer la gestion de votre espace local et le téléchargement de nouvelles images.
 
-
-## Pour vérification
-Remettre une capture d’écran de la création et du test de l'image.
 
 ## Références
 <https://docs.docker.com/engine/reference/builder/>  
