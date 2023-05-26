@@ -84,7 +84,8 @@ int main(int argc, char** argv) {
 - Essayez de lancer un nouveau conteneur en utilisant en ajoutant à la fin la chaîne de caractères <code>"Un paramètre qui vient de l'extérieur du conteneur"</code>.
 
 ## Pour vérification
-Remettre une capture d’écran de la dernière création et du dernier test de l'image.
+Remettre une capture d’écran de la dernière création et du dernier test de l'image.  
+![Exemple de remise](images/remiseExerc07.png)
 
 
 ## Section 2 - Créer une image à partir d'une autre image
