@@ -14,8 +14,8 @@
 
 ## Section 1 - Créez le programme hello-world
 
-- Sous Windows :  lancez une console Ubuntu.
-- Sous Linux lancer un terminal.
+- Sous Windows : lancez une console Ubuntu.
+- Sous Linux, lancer un terminal.
 - Vérifiez si le programme g++ est installé (g++ --help)
 - S'il n'est pas installé, l'installer (package g++)
 
@@ -25,7 +25,7 @@
 	```bash
 	sudo apt update && sudo apt install g++ -y
 	```
-	Si vous avez des problème avec l'installation de g ++ : <https://stackoverflow.com/questions/66869441/unable-to-install-g-and-build-essentials-in-ubuntu-20-04>.
+	Si vous avez des problèmes avec l'installation de g++ : <https://stackoverflow.com/questions/66869441/unable-to-install-g-and-build-essentials-in-ubuntu-20-04>.
 	</details>
 	
 - Créez le fichier "premier-programme.cpp" avec le contenu suivant :
@@ -112,7 +112,7 @@ docker build -f un_fichier_dockerfile
 	- Nous allons utiliser une image officielle (la commande <code>FROM</code>). On peut utiliser une image officielle comme image de départ, c’est même recommandé et ça rend notre tâche beaucoup plus simple.
 	- Par la suite, nous allons nous placer dans le répertoire <code>/usr/share/nginx/html</code> (la commande <code>WORKDIR</code>, nous aurions également pu utiliser la commande <code>RUN</code> avec <code>cd</code>).
 	- Finalement, nous allons copier le fichier <code>index.html</code> de notre répertoire hôte dans le répertoire <code>/usr/share/nginx/html</code> de notre conteneur : on n’inclut pas le chemin (path), car nous sommes déjà dans le répertoire.
-	- On n'a pas à spécifier <code>EXPOSE</code> pour les ports ou <code>CMD</code> car ils sont dans l'image initiale incluse avec la commande notre commande <code>FROM</code>. De là l’avantage d’utiliser une image existante.
+	- On n'a pas à spécifier <code>EXPOSE</code> pour les ports ou <code>CMD</code> car ils sont dans l'image initiale incluse avec la commande <code>FROM</code>. De là l’avantage d’utiliser une image existante.
 - Exécutez la commande pour construire votre image et exécuter un conteneur (le <code>-t</code> ajoute un tag à notre image, il y a un point à la fin).
 
 ```bash
@@ -143,7 +143,7 @@ Pour nettoyer toutes les images non utilisées :
 docker image prune -a
 ```
 
-- Nettoyez les images non utilisées de votre système (n'oubliez pas vos captures d'écran pour vérification avant).
+- Nettoyez les images non utilisées de votre système.
 - Utilisez la commande suivante pour voir l'utilisation de l'espace par Docker :
 
 ```bash
@@ -151,7 +151,7 @@ docker system df
 ```
 
 N'oubliez pas que chacune de ces commandes a des options que vous découvrez avec <code>--help</code>.  
-Par contre, ayant un compte Docker gratuit vous êtes limité au nombre de téléchargement d’images que vous pouvez faire en 6 heures : <https://docs.docker.com/docker-hub/download-rate-limit/>. Vous devez donc bien balancer la gestion de votre espace local et le téléchargement de nouvelles images.
+Par contre, ayant un compte Docker gratuit vous êtes limité au nombre de téléchargements d’images que vous pouvez faire en 6 heures : <https://docs.docker.com/docker-hub/download-rate-limit/>. Vous devez donc bien balancer la gestion de votre espace local et le téléchargement de nouvelles images.
 
 
 ## Références
