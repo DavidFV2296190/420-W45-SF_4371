@@ -195,7 +195,7 @@ sudo service mysql status
 - Vérifier les connexions possibles au serveur MySQL (vérifie si nous avons un port d'écoute) : 
 
 ```bash
-sudo ss -unap |grep 3306
+sudo ss -nap | grep 3306
 ```
 Résultat attendu : 
 
