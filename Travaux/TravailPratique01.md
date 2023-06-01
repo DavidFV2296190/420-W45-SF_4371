@@ -84,7 +84,7 @@ Le but de ce travail est de **documenter** la procédure d'installation d'un ser
 
 3. Procédure de validation de l'installation.
 
-Cette procédure utilisée par une tierce personne devrait démontrer le bon fonctionnent du serveur et comprendre les commandes nécessaires à la vérification des caractéristiques du serveur.
+	Cette procédure utilisée par une tierce personne devrait démontrer le bon fonctionnent du serveur et comprendre les commandes nécessaires à la vérification des caractéristiques du serveur.
 
 ### Suggestion
 
