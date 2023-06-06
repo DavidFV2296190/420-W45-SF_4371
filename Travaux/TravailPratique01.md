@@ -50,11 +50,13 @@ Le but de ce travail est de **documenter** la procédure d'installation d'un ser
 
 ## Vous devez fournir :
 
-- Un dépôt GitLab de votre travail dont 
+- Un dépôt GitHub de votre travail dont 
     - Un fichier auteurs.md qui résume les informations sur le dépôt.
          - Date 
          - Membres de l'équipe
          - Contexte
+- Nommez votre projet : ISS\_TP1\_[Initiales1\_Initiales2].
+- La visibilité est privée.
 - Le professeur doit être _Maintainer_ ainsi que les 2 membres de l'équipe
 - Votre fichier avec toutes les sections demandées.
 - Vous devez utiliser le format Markdown (md).
@@ -102,7 +104,7 @@ Pour vous aider, consulter les exercices que vous avez faits à ce jour.
 
 
 ## Références à consulter :
-- GitLab DFCSAE : https://dfcgit.cegep-ste-foy.qc.ca/
+
 - Installation  : https://ubuntu.com/tutorials/install-ubuntu-server#1-overview
 - Markdown : 
    - https://guides.github.com/features/mastering-markdown/
@@ -137,34 +139,4 @@ Pour vous aider, consulter les exercices que vous avez faits à ce jour.
 	6 – Rédiger la documentation.
 
 
-## Annexe : Créer un projet sur GitLab : 
 
-### Préalable 
-
- Si ce n'est pas déjà fait, configurer votre compte [GitLab](https://dfcgit.cegep-ste-foy.qc.ca/): 
-   
-  - Pour ce faire, cliquez sur la dernière icône en haut à droite -> Préférence.
-  - Sélectionnez Clés SSH et insérez votre clé publique.
-
-### Création d'un projet Git Lab
-
-- Dans  [GitLab](https://dfcgit.cegep-ste-foy.qc.ca) créer un projet git à la racine d'un des membres de l'équipe.
-    
-    - Nommez votre projet : ISS\_TP1\_[Initiales1\_Initiales2].
-    - URL du projet sélectionnez votre identifiant dans la liste déroulante.
-    - Ajouter une description résumant le projet.
-    - Choisissez la visibilité privée.
-
-    - Prenez quelques minutes pour lire les informations de bases de votre projet.
-    - Lisez la liste des étapes proposées dans la section "Getting started".
-    - À partir de la section "Invite team members and collaborators" invité le professeur (@clroy) à collaborer à votre projet comme membre direct entant que _Maintainer_ sans date d'expiration.
-    - Faite de même pour votre coéquipier.
-
-
-### Configuration du projet
-
- - Désactivez le pipeline Auto DevOPS :
-
-     - Allez dans -> Paramètres -> Intégration et livraison continues -> Auto DevOps, cliquez sur Étendre et désactiver Pipeline Auto DeOps par défaut.
-
-        ![Pipeline Auto DevOps](./images/AutoDevOps.png)
