@@ -191,19 +191,25 @@ Ajouter le paramètre <code>--help</code> à la fin de la commande et indiquer l
 Afficher les journaux en continu :
 <details>
   <summary markdown="span">Réponse.</summary>
-	`-f`
+	
+	-f
+
 </details>
 
 Afficher les journaux depuis un temps en particulier :
 <details>
   <summary markdown="span">Réponse.</summary>
-	`--since`
+
+	--since
+
 </details>
 
 Afficher les 10 dernières lignes :  
 <details>
   <summary markdown="span">Réponse.</summary>
-	`--tail 10`
+
+	--tail 10
+
 </details>
 
 Exécuter la commande suivante pour afficher les processus qui s’exécutent dans le conteneur.
