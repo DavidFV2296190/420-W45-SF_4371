@@ -193,7 +193,7 @@ Et voilà le travail. Nous pouvons constater à quel point il peut être fastidi
 Un DNS récursif garde en mémoire qu'il trouve en effectuant cette recherche et s'en resservira pour d'éventuelles résolutions futures. Les serveurs « qui font autorité » indiquent une durée de validité pour les informations qu'ils donnent. Ainsi, les serveurs récursifs devront rafraichir le contenu de leur cache en fonction de cette durée de validité. 
 
 
-## Section 1 : DNS sous Docker
+## Section 2 : DNS sous Docker
 
 Dans cette section, vous allez essayer de comprendre la communication entre conteneurs avec le DNS interne de Docker.
 
