@@ -161,7 +161,7 @@ Quel est le serveur de nom (DNS) pour votre hôte ?
 Notre serveur DNS, fait une recherche récursive pour trouver l'information de www.csfoy.ca. Vous allez reproduire ce cheminement avec la commande `host`.
 
 
-- Nous allons utiliser l'outil `host` pour chercher à résoudre le FQDN www.csfoy.ca non plus en posant la question à notre serveur DNS récursif, mais en partant d'un serveur racine d'Internet (le serveur j.root-server avec l'Adresse IP 192.58.128.30), en utilisant la commande comme ceci :
+- Nous allons utiliser l'outil `host` pour chercher à résoudre le FQDN www.csfoy.ca non plus en posant la question à notre serveur DNS récursif, mais en partant d'un serveur racine d'Internet (le serveur j.root-server avec l'adresse IP 192.58.128.30), en utilisant la commande comme ceci :
 
 	```bash
 	host -v www.csfoy.ca 192.58.128.30|less
