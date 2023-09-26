@@ -131,7 +131,7 @@ sudo apt-add-repository ppa:ansible/ansible
 Puis, l'installation :
 
 ```bash
-sudo apt update && sudo apt intall ansible -y
+sudo apt update && sudo apt install ansible -y
 ```
 
 Vérification de la version d’Ansible
