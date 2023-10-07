@@ -200,7 +200,7 @@ Réponse :
 Réponse :
 
 
-15- Quel est l’intérêt d’utiliser Docker-Compose ? Qu’-est ce que ça permet de faire ? Qu’elle ait la différence avec Dockerfile ? Dans quel type d’environnement ça peut être utilisé ? (5 points)
+15- Quel est l’intérêt d’utiliser Docker-Compose ? Qu’est-ce que ça permet de faire ? Qu’elle est la différence avec un Dockerfile ? Dans quel type d’environnement ça peut être utilisé ? (5 points)
 
 Réponse :
 
@@ -290,7 +290,7 @@ Votre vidéo :
 ||Ansible|40||
 ||Voir les traces (fichier .traces\_d\_ansible) d'ansible |10||
 |Compréhension||10||
-|**Total** ||**100**||
+|**Total** ||**90**||
 
 
 ### Section 2 : /10  
