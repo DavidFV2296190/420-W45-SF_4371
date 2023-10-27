@@ -30,7 +30,7 @@
 - Installe un système de fichiers sécurisé.
 - Partitionne correctement les disques pour mieux identifier les partitions systèmes et données.
 - Détermine les bons droits d’accès aux ressources.
-- Gére les droits d’accès (ajout, suppression, modification, etc.).
+- Gère les droits d’accès (ajout, suppression, modification, etc.).
 - Applique les techniques de documentation de suivi des modifications apportées avant, pendant et après l’installation selon les normes de l’organisation.
 - Effectue une mise à jour régulière et systématique de l'information répertoriée.
 - Mets à jour les documents de procédure.
@@ -57,26 +57,26 @@ Le but de ce travail est de **documenter** la procédure d'installation d'un ser
          - Contexte
 - Nommez votre projet : ISS\_TP1\_[Initiales1\_Initiales2].
 - La visibilité est privée.
-- Le professeur doit être _Maintainer_ ainsi que les 2 membres de l'équipe
+- Le professeur doit être _Contributeur_ ainsi que les 2 membres de l'équipe
 - Votre fichier avec toutes les sections demandées.
 - Vous devez utiliser le format Markdown (md).
 - Vous devez utiliser des images pour favoriser la compréhension.
 - Vous devez donner vos sites de références.
-- Vous devez indiquer l'adresse du dépôt dans LÉA, Travaux-> TP1 - Procédure d'installation d'un serveur.  
+- Vous devez déposer sur Léa un fichier texte contenant l'adresse de votre dépôt.  
 
 ## Voici les sections qui doivent être incluses dans votre procédure:
 
 1. Caractérisation de la machine serveur :  
 
    - Nom de la Vm et Nom de la machine (hostname)
-   - Adresses IPv4, IPv6 (réseau) avec les informations de masque et de passerelle.
-   - Fichier Hosts (partie liée à l'installation). 
-   - Port des services ouverts.
+   - Adresse IPv4 avec les informations de masque et de passerelle.
+   - Fichier /etc/hosts (partie liée à l'installation). 
+   - Port des services ouverts (penser ss).
    - Usager utilisé pour l'installation, autre que root.
 
 2. Les mises à jour préalables à l'installation et ajout de composants nécessaires.
    
-   Que doit contenir votre serveur pour devenir un modèle de déploiement.
+   Que doit se retrouver sur votre serveur pour devenir un modèle de déploiement.
    
    - Programmes : Nom, version, procédure d'installation.
    - Pour chacun des programmes installés : 
@@ -97,25 +97,25 @@ Pour vous aider, consulter les exercices que vous avez faits à ce jour.
 - Le temps alloué en classe est d'une période.
 - La date de remise est celle indiquée sur LÉA.
 - Ce travail pratique vaut pour 15 % de la note finale.
-- Ce travail est réalisé en équipe de 2 membres et seuls les membres de cette équipe y contribuent.
-- Tout le matériel est autorisé.
+- Ce travail est réalisé en équipe de 2 membres et seuls les membres de cette équipe y contribuent (pour la création).
+- Tout matériel est autorisé.
 - Toute copie de code, de portion de code, d’algorithme ou de texte doit faire mention de sa source.
 - Tout constat de plagiat, tricherie ou fraude sera automatiquement déclaré à la Direction et les sanctions prévues seront appliquées.
 
 
 ## Références à consulter :
 
-- Installation  : https://ubuntu.com/tutorials/install-ubuntu-server#1-overview
+- Installation  :[ https://ubuntu.com/tutorials/install-ubuntu-server#1-overview](https://ubuntu.com/tutorials/install-ubuntu-server#1-overview)
 - Markdown : 
-   - https://guides.github.com/features/mastering-markdown/
-   - https://about.gitlab.com/handbook/markdown-guide/
+   - [https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)
+   - [https://about.gitlab.com/handbook/markdown-guide/](https://about.gitlab.com/handbook/markdown-guide/)
 
 
 
 ## Évaluation :
 |Item |Points  |
 --- | --- |
-|Respect des consignes sur le dépôt |20|
+|Respect des consignes sur le dépôt et léa |20|
 |Respect des caractéristiques demandées |20|
 |Section caractéristiques et mise à jour et ajout de composants  |30|
 |Section Procédure de vérification |30|
